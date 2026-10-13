@@ -1,21 +1,16 @@
 # chilpa-plugins
 
-I publish Chilpa's installable plugin catalog in `index.json`. Each plugin
-keeps its source and release ZIP in its own repository. The SDK and authoring
-documentation live in [chilpa-plugins-sdk](https://github.com/vicrodh/chilpa-plugins-sdk).
-
-## Catalog URL
+The list of plugins Chilpa offers to install, in `index.json`. Each plugin
+lives in its own repository with its source and release ZIP. To write one,
+start with [chilpa-plugins-sdk](https://github.com/vicrodh/chilpa-plugins-sdk).
 
 ```text
 https://raw.githubusercontent.com/vicrodh/chilpa-plugins/main/index.json
 ```
 
-I add that URL in Chilpa's **Plugin repository URL** field. The host checks
-the package SHA-256 before staging a release and still asks for permission
-approval before enabling a plugin. The current host does not add this URL
-automatically; making it the built-in default requires a separate host change.
-
-## Listed plugins
+Chilpa reads this catalog by default. Before installing, it checks the ZIP
+against the SHA-256 listed here, and it asks you to approve the plugin's
+permissions before enabling it.
 
 | Plugin | Source | Package |
 | --- | --- | --- |
@@ -23,6 +18,7 @@ automatically; making it the built-in default requires a separate host change.
 | Podcasts | [chilpa-pg-podcasts](https://github.com/vicrodh/chilpa-pg-podcasts) | WASM |
 | Playlist Importer | [chilpa-pg-playlist-import](https://github.com/vicrodh/chilpa-pg-playlist-import) | Linux x86_64 process |
 
-I update an entry only after publishing its matching release ZIP, checking
-its manifest and SHA-256, and confirming its API version with Chilpa. The
-`protocol-4` SDK tag is a source revision, not a catalog API version.
+An entry changes only after its release ZIP is published and its manifest,
+SHA-256 and API version are checked against Chilpa. The `api` range is the
+manifest's `api_version`; the SDK's `protocol-4` tag is a source revision,
+not an API version.
