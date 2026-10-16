@@ -45,6 +45,36 @@
         "min": 1,
         "max": 1
       }
+    },
+    {
+      "id": "app.chilpa.dsp",
+      "name": "Chilpa DSP",
+      "version": "0.1.1",
+      "description": "Offline equalizer, crossfeed and listening presets. DSP modifies the signal; native DSD and DoP bypass processing.",
+      "author": "vicrodh",
+      "category": "DSP",
+      "repository": "https://github.com/vicrodh/chilpa-pg-dsp",
+      "package": "https://github.com/vicrodh/chilpa-pg-dsp/releases/download/v0.1.1/chilpa-dsp-0.1.1.zip",
+      "sha256": "28a4f8370b6c6337dc92ad6fb5cbe95a4f90601af9bc42e5273edc68b3bf2311",
+      "api": {
+        "min": 1,
+        "max": 1
+      }
+    },
+    {
+      "id": "app.chilpa.mood",
+      "name": "Mood",
+      "version": "0.1.2",
+      "description": "Experimental local mood and similarity analysis with offline models. No audio or analysis results are uploaded. Models download only when enabled; noncommercial model license. Linux x86_64 only.",
+      "author": "vicrodh",
+      "category": "Analysis",
+      "repository": "https://github.com/vicrodh/chilpa-pg-mood",
+      "package": "https://github.com/vicrodh/chilpa-pg-mood/releases/download/v0.1.2/chilpa-pg-mood-0.1.2-linux-x86_64.zip",
+      "sha256": "a4dd97eb66a1718206b458d89299ccc359d880da1c2b1f6ea37e8d57febb759d",
+      "api": {
+        "min": 1,
+        "max": 1
+      }
     }
   ]
 }
