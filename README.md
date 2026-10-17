@@ -21,10 +21,10 @@ approval before enabling a plugin.
 | --- | --- | --- | --- |
 | Radio | [chilpa-pg-radio](https://github.com/vicrodh/chilpa-pg-radio) | Stations from Radio Browser. No account. | WASM |
 | Podcasts | [chilpa-pg-podcasts](https://github.com/vicrodh/chilpa-pg-podcasts) | Shows and episodes from PodcastIndex. No account. | WASM |
-| Playlist Importer | [chilpa-pg-playlist-import](https://github.com/vicrodh/chilpa-pg-playlist-import) | Import playlist files and public playlists, then match tracks to local and connected sources. | Linux x86_64 process |
+| Playlist Importer | [chilpa-pg-playlist-import](https://github.com/vicrodh/chilpa-pg-playlist-import) | Import playlist files and public playlists, then match tracks to local and connected sources. | Linux x86_64 / macOS Apple Silicon process |
 | DSP | [chilpa-pg-dsp](https://github.com/vicrodh/chilpa-pg-dsp) | Offline equalizer with vertical sliders, crossfeed and listening presets. Native DSD and DoP bypass processing. | WASM |
 | Mood | [chilpa-pg-mood](https://github.com/vicrodh/chilpa-pg-mood) | **Experimental.** Local mood and similarity analysis with offline models. No audio or analysis results are uploaded. Optional model download; noncommercial model license. | Linux x86_64 process |
-| Tidal | [chilpa-pg-tidal](https://github.com/vicrodh/chilpa-pg-tidal) | **Third-party, validated by Chilpa.** Library, discovery, playlists and playback. Requires a Tidal subscription. | Linux x86_64 process |
+| Tidal | [chilpa-pg-tidal](https://github.com/vicrodh/chilpa-pg-tidal) | **Third-party, validated by Chilpa.** Library, discovery, playlists and playback. Requires a Tidal subscription. | Linux x86_64 / macOS Apple Silicon process |
 
 I list Tidal as an independently maintained third-party plugin by `vicrodh`,
 with [validation evidence](https://github.com/vicrodh/chilpa-3rd-party-plugins/blob/177bb42dd0e147ee8d0f3659a5888304ee4e7ef2/validation/tidal-0.1.18.json)
@@ -34,3 +34,11 @@ with the service provider.
 I update an entry only after publishing its matching release ZIP, checking
 its manifest and SHA-256, and confirming its API version with Chilpa. The
 `protocol-4` SDK tag is a source revision, not a catalog API version.
+
+I publish separate native ZIPs for each listed platform. Updated Chilpa hosts
+select the current platform's `packages` entry and verify its checksum;
+older Linux hosts retain the top-level package. Unsupported OS/architecture
+entries are omitted from the visible catalog. The macOS native plugins
+require the host build with Seatbelt process support. WASM packages remain
+portable. The [SDK guide](https://github.com/vicrodh/chilpa-plugins-sdk/blob/main/wiki/Native-Plugins.md#platform-packages)
+describes the package map and platform restrictions.

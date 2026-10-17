@@ -35,7 +35,7 @@
       "id": "app.chilpa.playlist-import",
       "name": "Playlist Importer",
       "version": "0.1.1",
-      "description": "Import public playlists and playlist files, then match their tracks against your local library and connected sources. Create local, mixed or source-owned playlists and review unmatched tracks. Source accounts remain in their own plugins. (Linux x86_64 only)",
+      "description": "Import public playlists and playlist files, then match their tracks against your local library and connected sources. Create local, mixed or source-owned playlists and review unmatched tracks. Source accounts remain in their own plugins. (Linux x86_64 and macOS Apple Silicon)",
       "author": "vicrodh",
       "category": "playlists",
       "repository": "https://github.com/vicrodh/chilpa-pg-playlist-import",
@@ -44,6 +44,27 @@
       "api": {
         "min": 1,
         "max": 1
+      },
+      "packages": {
+        "linux-x86_64": {
+          "package": "https://github.com/vicrodh/chilpa-pg-playlist-import/releases/download/v0.1.1/chilpa-pg-playlist-import-0.1.1-linux-x86_64.zip",
+          "sha256": "7ca8ff1a959e72acb083094b46d8b4cf761016b7c8df2adc7c54e451b3d9dd88"
+        },
+        "macos-aarch64": {
+          "package": "https://github.com/vicrodh/chilpa-pg-playlist-import/releases/download/v0.1.1/chilpa-pg-playlist-import-0.1.1-macos-aarch64.zip",
+          "sha256": "0f59abdba4e08adf4f4ace9734201046870318e5a71ac8224d046cee824c1841"
+        }
+      },
+      "validation": {
+        "project": "Chilpa",
+        "status": "passed",
+        "report": "https://raw.githubusercontent.com/vicrodh/chilpa-plugins/2157d0f285f450c99c38a2ee0f0a259f4cc12bd1/validation/playlist-import-0.1.1-macos-aarch64.json",
+        "platforms": {
+          "macos-aarch64": {
+            "status": "passed",
+            "report": "https://raw.githubusercontent.com/vicrodh/chilpa-plugins/2157d0f285f450c99c38a2ee0f0a259f4cc12bd1/validation/playlist-import-0.1.1-macos-aarch64.json"
+          }
+        }
       }
     },
     {
@@ -74,13 +95,19 @@
       "api": {
         "min": 1,
         "max": 1
+      },
+      "packages": {
+        "linux-x86_64": {
+          "package": "https://github.com/vicrodh/chilpa-pg-mood/releases/download/v0.1.2/chilpa-pg-mood-0.1.2-linux-x86_64.zip",
+          "sha256": "a4dd97eb66a1718206b458d89299ccc359d880da1c2b1f6ea37e8d57febb759d"
+        }
       }
     },
     {
       "id": "app.chilpa.tidal",
       "name": "Tidal",
       "version": "0.1.18",
-      "description": "Third-party Tidal library, discovery, playlists and playback. Requires a Tidal subscription. Linux x86_64 only.",
+      "description": "Third-party Tidal library, discovery, playlists and playback. Requires a Tidal subscription. Linux x86_64 and macOS Apple Silicon.",
       "author": "vicrodh",
       "category": "Streaming",
       "repository": "https://github.com/vicrodh/chilpa-pg-tidal",
@@ -94,7 +121,23 @@
       "validation": {
         "project": "Chilpa",
         "status": "passed",
-        "report": "https://raw.githubusercontent.com/vicrodh/chilpa-3rd-party-plugins/177bb42dd0e147ee8d0f3659a5888304ee4e7ef2/validation/tidal-0.1.18.json"
+        "report": "https://raw.githubusercontent.com/vicrodh/chilpa-3rd-party-plugins/177bb42dd0e147ee8d0f3659a5888304ee4e7ef2/validation/tidal-0.1.18.json",
+        "platforms": {
+          "macos-aarch64": {
+            "status": "passed",
+            "report": "https://raw.githubusercontent.com/vicrodh/chilpa-3rd-party-plugins/32019d24c382ec17f37337f8462d908b45c02c68/validation/tidal-0.1.18-macos-aarch64.json"
+          }
+        }
+      },
+      "packages": {
+        "linux-x86_64": {
+          "package": "https://github.com/vicrodh/chilpa-pg-tidal/releases/download/v0.1.18/chilpa-pg-tidal-0.1.18-linux-x86_64.zip",
+          "sha256": "eb42be018780a1401a54fe26199d43130233e0df313d5c687925f0ce418b120b"
+        },
+        "macos-aarch64": {
+          "package": "https://github.com/vicrodh/chilpa-pg-tidal/releases/download/v0.1.18/chilpa-pg-tidal-0.1.18-macos-aarch64.zip",
+          "sha256": "1afda8413af0f0f144bc5990f0a004bd945c02527a42ace3dc0435313b101e99"
+        }
       }
     }
   ]
