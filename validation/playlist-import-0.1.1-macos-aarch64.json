@@ -1,0 +1,42 @@
+{
+  "plugin": "app.chilpa.playlist-import",
+  "version": "0.1.1",
+  "platform": "macos-aarch64",
+  "status": "passed",
+  "package": {
+    "url": "https://github.com/vicrodh/chilpa-pg-playlist-import/releases/download/v0.1.1/chilpa-pg-playlist-import-0.1.1-macos-aarch64.zip",
+    "sha256": "0f59abdba4e08adf4f4ace9734201046870318e5a71ac8224d046cee824c1841"
+  },
+  "source": {
+    "runtime_tag": "v0.1.1",
+    "repository": "https://github.com/vicrodh/chilpa-pg-playlist-import",
+    "packaging_documentation_commit": "9a71cc8e0879c313fb7ab4693de3e1d5216bbce2"
+  },
+  "host": {
+    "source_commit": "1671540715c0927f28db10d0d09bd833e95c6d28",
+    "platform": "macos-aarch64",
+    "tested_macos": "26.6.2",
+    "sandbox": "Seatbelt deny-default",
+    "deployed_app_startup": true,
+    "exact_package_installed": true,
+    "permission_review": true
+  },
+  "checks": [
+    "macOS catalog package selection",
+    "host ZIP installer",
+    "permission review",
+    "native sandbox initialization",
+    "signed-out authentication form",
+    "sign-in cancellation",
+    "playlist preview",
+    "host broker library matching",
+    "scoped playlist commit",
+    "deduplication",
+    "unmatched review",
+    "database playlist with two entries"
+  ],
+  "physical_audio_used": false,
+  "live_account_used": false,
+  "real_profile_modified": false,
+  "live_account_playback": "not tested"
+}
