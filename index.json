@@ -139,6 +139,47 @@
           "sha256": "1afda8413af0f0f144bc5990f0a004bd945c02527a42ace3dc0435313b101e99"
         }
       }
+    },
+    {
+      "id": "app.chilpa.spotify",
+      "name": "Spotify",
+      "version": "0.3.0",
+      "description": "Third-party Spotify search, library, discovery, Radio, playlists, lyrics and playback. Premium required for audio; personal Client ID recommended. Inspired by Spotifast by Carmine Paolino.",
+      "author": "vicrodh",
+      "category": "Streaming",
+      "repository": "https://github.com/vicrodh/chilpa-pg-spotify",
+      "package": "https://github.com/vicrodh/chilpa-pg-spotify/releases/download/v0.3.0/app.chilpa.spotify-0.3.0-linux-x86_64.zip",
+      "sha256": "bbeb71d071f29d29dbb28f21c18c2802db7bdcfb785fca3eea87df950423ee9b",
+      "api": {
+        "min": 1,
+        "max": 1
+      },
+      "classification": "third_party",
+      "validation": {
+        "project": "Chilpa",
+        "status": "passed",
+        "report": "https://raw.githubusercontent.com/vicrodh/chilpa-3rd-party-plugins/0f7bf6cfda60cd76b52870a51b87ca5251de922b/validation/spotify-0.3.0-linux-x86_64.json",
+        "platforms": {
+          "linux-x86_64": {
+            "status": "passed",
+            "report": "https://raw.githubusercontent.com/vicrodh/chilpa-3rd-party-plugins/0f7bf6cfda60cd76b52870a51b87ca5251de922b/validation/spotify-0.3.0-linux-x86_64.json"
+          },
+          "macos-aarch64": {
+            "status": "passed",
+            "report": "https://raw.githubusercontent.com/vicrodh/chilpa-3rd-party-plugins/0f7bf6cfda60cd76b52870a51b87ca5251de922b/validation/spotify-0.3.0-macos-aarch64.json"
+          }
+        }
+      },
+      "packages": {
+        "linux-x86_64": {
+          "package": "https://github.com/vicrodh/chilpa-pg-spotify/releases/download/v0.3.0/app.chilpa.spotify-0.3.0-linux-x86_64.zip",
+          "sha256": "bbeb71d071f29d29dbb28f21c18c2802db7bdcfb785fca3eea87df950423ee9b"
+        },
+        "macos-aarch64": {
+          "package": "https://github.com/vicrodh/chilpa-pg-spotify/releases/download/v0.3.0/app.chilpa.spotify-0.3.0-macos-aarch64.zip",
+          "sha256": "bb7160f70595442df5f1900fc455f53de329a48655328ddb60ea4b665f5f959b"
+        }
+      }
     }
   ]
 }

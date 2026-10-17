@@ -25,11 +25,17 @@ approval before enabling a plugin.
 | DSP | [chilpa-pg-dsp](https://github.com/vicrodh/chilpa-pg-dsp) | Offline equalizer with vertical sliders, crossfeed and listening presets. Native DSD and DoP bypass processing. | WASM |
 | Mood | [chilpa-pg-mood](https://github.com/vicrodh/chilpa-pg-mood) | **Experimental.** Local mood and similarity analysis with offline models. No audio or analysis results are uploaded. Optional model download; noncommercial model license. | Linux x86_64 process |
 | Tidal | [chilpa-pg-tidal](https://github.com/vicrodh/chilpa-pg-tidal) | **Third-party, validated by Chilpa.** Library, discovery, playlists and playback. Requires a Tidal subscription. | Linux x86_64 / macOS Apple Silicon process |
+| Spotify | [chilpa-pg-spotify](https://github.com/vicrodh/chilpa-pg-spotify) | **Third-party, validated by Chilpa.** Search, library, discovery, Radio, playlists, lyrics and playback. Premium required for audio; personal Client ID recommended. | Linux x86_64 / macOS Apple Silicon process |
 
 I list Tidal as an independently maintained third-party plugin by `vicrodh`,
 with [validation evidence](https://github.com/vicrodh/chilpa-3rd-party-plugins/blob/177bb42dd0e147ee8d0f3659a5888304ee4e7ef2/validation/tidal-0.1.18.json)
 for the published package. Inclusion in this catalog does not imply affiliation
 with the service provider.
+
+I list Spotify under the same independent classification. Its README credits
+Carmine Paolino's Spotifast, and the SDK links it as a
+[native source example](https://github.com/vicrodh/chilpa-plugins-sdk/blob/main/wiki/Native-Plugins.md#native-source-example).
+I publish validation evidence for each platform in the third-party catalog.
 
 I update an entry only after publishing its matching release ZIP, checking
 its manifest and SHA-256, and confirming its API version with Chilpa. The
