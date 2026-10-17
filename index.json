@@ -75,6 +75,27 @@
         "min": 1,
         "max": 1
       }
+    },
+    {
+      "id": "app.chilpa.tidal",
+      "name": "Tidal",
+      "version": "0.1.18",
+      "description": "Third-party Tidal library, discovery, playlists and playback. Requires a Tidal subscription. Linux x86_64 only.",
+      "author": "vicrodh",
+      "category": "Streaming",
+      "repository": "https://github.com/vicrodh/chilpa-pg-tidal",
+      "package": "https://github.com/vicrodh/chilpa-pg-tidal/releases/download/v0.1.18/chilpa-pg-tidal-0.1.18-linux-x86_64.zip",
+      "sha256": "eb42be018780a1401a54fe26199d43130233e0df313d5c687925f0ce418b120b",
+      "api": {
+        "min": 1,
+        "max": 1
+      },
+      "classification": "third_party",
+      "validation": {
+        "project": "Chilpa",
+        "status": "passed",
+        "report": "https://raw.githubusercontent.com/vicrodh/chilpa-3rd-party-plugins/177bb42dd0e147ee8d0f3659a5888304ee4e7ef2/validation/tidal-0.1.18.json"
+      }
     }
   ]
 }
