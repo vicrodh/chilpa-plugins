@@ -1,6 +1,6 @@
 # chilpa-plugins
 
-I publish Chilpa's installable plugin catalog in `index.json`. Each plugin
+Chilpa's installable plugin catalog is `index.json`. Each plugin
 keeps its source and release ZIP in its own repository. The SDK and authoring
 documentation live in [chilpa-plugins-sdk](https://github.com/vicrodh/chilpa-plugins-sdk).
 
@@ -10,8 +10,7 @@ documentation live in [chilpa-plugins-sdk](https://github.com/vicrodh/chilpa-plu
 https://raw.githubusercontent.com/vicrodh/chilpa-plugins/main/index.json
 ```
 
-I configure that URL by default in Chilpa 0.1.0-beta and bundle an initial
-offline copy. Refresh in Settings > Plugins retrieves the current index. The host checks
+Chilpa 0.1.0-beta uses that URL by default and includes an initial offline copy. Refresh in Settings > Plugins retrieves the current index. The host checks
 the package SHA-256 before staging a release and still asks for permission
 approval before enabling a plugin.
 
@@ -27,21 +26,21 @@ approval before enabling a plugin.
 | Tidal | [chilpa-pg-tidal](https://github.com/vicrodh/chilpa-pg-tidal) | **Third-party, validated by Chilpa.** Library, discovery, playlists and playback. Requires a Tidal subscription. | Linux x86_64 / macOS Apple Silicon process |
 | Spotify | [chilpa-pg-spotify](https://github.com/vicrodh/chilpa-pg-spotify) | **Third-party, validated by Chilpa.** Search, library, discovery, Radio, playlists, lyrics and playback. Premium required for audio; personal Client ID recommended. | Linux x86_64 / macOS Apple Silicon process |
 
-I list Tidal as an independently maintained third-party plugin by `vicrodh`,
+Tidal is an independently maintained third-party plugin by `vicrodh`,
 with [validation evidence](https://github.com/vicrodh/chilpa-3rd-party-plugins/blob/177bb42dd0e147ee8d0f3659a5888304ee4e7ef2/validation/tidal-0.1.18.json)
 for the published package. Inclusion in this catalog does not imply affiliation
 with the service provider.
 
-I list Spotify under the same independent classification. Its README credits
+Spotify has the same independent classification. Its README credits
 Carmine Paolino's Spotifast, and the SDK links it as a
 [native source example](https://github.com/vicrodh/chilpa-plugins-sdk/blob/main/wiki/Native-Plugins.md#native-source-example).
-I publish validation evidence for each platform in the third-party catalog.
+The third-party catalog includes validation evidence for each platform.
 
-I update an entry only after publishing its matching release ZIP, checking
-its manifest and SHA-256, and confirming its API version with Chilpa. The
+Catalog updates require a published release ZIP, a checked manifest and
+SHA-256, and a confirmed API version compatible with Chilpa. The
 `protocol-4` SDK tag is a source revision, not a catalog API version.
 
-I publish separate native ZIPs for each listed platform. Updated Chilpa hosts
+Native plugins have separate ZIPs for each listed platform. Updated Chilpa hosts
 select the current platform's `packages` entry and verify its checksum;
 older Linux hosts retain the top-level package. Unsupported OS/architecture
 entries are omitted from the visible catalog. The macOS native plugins
