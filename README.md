@@ -1,5 +1,10 @@
 # chilpa-plugins
 
+The official plugin catalog of [Chilpa](https://github.com/vicrodh/chilpa), a native music player for
+local libraries and self-hosted servers ([chilpa.app](https://chilpa.app)).
+Plugins from independent authors are listed in the
+[third-party catalog](https://github.com/vicrodh/chilpa-3rd-party-plugins).
+
 Chilpa's installable plugin catalog is `index.json`. Each plugin
 keeps its source and release ZIP in its own repository. The SDK and authoring
 documentation live in [chilpa-plugins-sdk](https://github.com/vicrodh/chilpa-plugins-sdk).
