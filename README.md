@@ -1,3 +1,5 @@
+<img width="100%" alt="Chilpa Official Plugins: official plugins maintained by the project" src="assets/chilpa-official-plugins.png" />
+
 # chilpa-plugins
 
 The official plugin catalog of [Chilpa](https://github.com/vicrodh/chilpa), a native music player for
