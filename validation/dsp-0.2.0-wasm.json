@@ -1,0 +1,52 @@
+{
+  "version": 1,
+  "plugin_id": "app.chilpa.dsp",
+  "plugin_version": "0.2.0",
+  "author": "vicrodh",
+  "classification": "official",
+  "validation": {
+    "project": "Chilpa",
+    "status": "partial",
+    "date": "2026-11-20",
+    "scope": [
+      "CI tests and production packaging",
+      "archive CRC and SHA-256",
+      "manifest identity and API version"
+    ],
+    "pending": [
+      "Chilpa 0.1.3 release with the required host contracts",
+      "exact CI archive installation in the corresponding native and Flatpak hosts",
+      "release publication and public URL verification"
+    ]
+  },
+  "source": {
+    "repository": "https://github.com/vicrodh/chilpa-pg-dsp",
+    "commit": "184ac7dd0b3cfa1b4f97cae7ce319bf3cbe3c117"
+  },
+  "package": {
+    "name": "chilpa-dsp-0.2.0.zip",
+    "url": "https://github.com/vicrodh/chilpa-pg-dsp/releases/download/v0.2.0/chilpa-dsp-0.2.0.zip",
+    "sha256": "b354b3b93d13759715c71f98f253b1beba3d95fe4606191d8b6716e472e9d9c4",
+    "platform": "wasm",
+    "compressed_bytes": 1430330,
+    "expanded_bytes": 2562535,
+    "publication": "draft_release"
+  },
+  "contract": {
+    "api_version": 1,
+    "runtime": "wasm",
+    "required_chilpa": "0.1.3"
+  },
+  "permissions": [
+    {
+      "type": "process_audio"
+    }
+  ],
+  "ci": {
+    "status": "passed",
+    "run": "https://github.com/vicrodh/chilpa-pg-dsp/actions/runs/44845614667"
+  },
+  "exact_package_host_integration": "pending",
+  "live_account_playback": "not tested",
+  "physical_audio": "not tested"
+}
