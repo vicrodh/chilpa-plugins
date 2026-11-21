@@ -28,20 +28,16 @@ approval before enabling a plugin.
 | Radio | [chilpa-pg-radio](https://github.com/vicrodh/chilpa-pg-radio) | Stations from Radio Browser. No account. | WASM |
 | Podcasts | [chilpa-pg-podcasts](https://github.com/vicrodh/chilpa-pg-podcasts) | Shows and episodes from PodcastIndex. No account. | WASM |
 | Playlist Importer | [chilpa-pg-playlist-import](https://github.com/vicrodh/chilpa-pg-playlist-import) | Import playlist files and public playlists, then match tracks to local and connected sources. | Linux x86_64 / macOS Apple Silicon process |
-| DSP | [chilpa-pg-dsp](https://github.com/vicrodh/chilpa-pg-dsp) | Offline equalizer with vertical sliders, crossfeed and listening presets. Native DSD and DoP bypass processing. | WASM |
+| DSP | [chilpa-pg-dsp](https://github.com/vicrodh/chilpa-pg-dsp) | 8,772 measured headphone profiles and 53 listening presets. Expanded catalog and editor require Chilpa 0.1.3. | WASM |
+| Nest | [chilpa-pg-nest](https://github.com/vicrodh/chilpa-pg-nest) | **Early-stage experimental.** CD shelves and optional player deck. Requires Chilpa 0.1.3. Ideas and feedback are welcome. | Linux x86_64 process |
 | Mood | [chilpa-pg-mood](https://github.com/vicrodh/chilpa-pg-mood) | **Experimental.** Local mood and similarity analysis with offline models. No audio or analysis results are uploaded. Optional model download; noncommercial model license. | Linux x86_64 process |
-| Tidal | [chilpa-pg-tidal](https://github.com/vicrodh/chilpa-pg-tidal) | **Third-party, validated by Chilpa.** Library, discovery, playlists and playback. Requires a Tidal subscription. | Linux x86_64 / macOS Apple Silicon process |
-| Spotify | [chilpa-pg-spotify](https://github.com/vicrodh/chilpa-pg-spotify) | **Third-party, validated by Chilpa.** Search, library, discovery, Radio, playlists, lyrics and playback. Premium required for audio; personal Client ID recommended. | Linux x86_64 / macOS Apple Silicon process |
 
-Tidal is an independently maintained third-party plugin by `vicrodh`,
-with [validation evidence](https://github.com/vicrodh/chilpa-3rd-party-plugins/blob/177bb42dd0e147ee8d0f3659a5888304ee4e7ef2/validation/tidal-0.1.18.json)
-for the published package. Inclusion in this catalog does not imply affiliation
-with the service provider.
+Tidal and Spotify are listed in the [third-party catalog](https://github.com/vicrodh/chilpa-3rd-party-plugins).
 
-Spotify has the same independent classification. Its README credits
-Carmine Paolino's Spotifast, and the SDK links it as a
-[native source example](https://github.com/vicrodh/chilpa-plugins-sdk/blob/main/wiki/Native-Plugins.md#native-source-example).
-The third-party catalog includes validation evidence for each platform.
+Nest is in an early experimental stage. Share ideas, rough edges and test
+results in its [issues](https://github.com/vicrodh/chilpa-pg-nest/issues).
+Its trusted QML and native helper run inside Chilpa with application privileges.
+Raspberry Pi builds and physical touchscreen validation remain pending.
 
 Catalog updates require a published release ZIP, a checked manifest and
 SHA-256, and a confirmed API version compatible with Chilpa. The
