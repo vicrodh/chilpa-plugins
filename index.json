@@ -84,11 +84,11 @@
       "validation": {
         "project": "Chilpa",
         "status": "partial",
-        "report": "https://raw.githubusercontent.com/vicrodh/chilpa-plugins/1115b5d46f658b9e54e158c1cdedb27ec7272a29/validation/dsp-0.2.0-wasm.json",
+        "report": "https://raw.githubusercontent.com/vicrodh/chilpa-plugins/1751e25d61aa705c056717cf3d0e81751c585d08/validation/dsp-0.2.0-wasm.json",
         "platforms": {
           "wasm": {
             "status": "partial",
-            "report": "https://raw.githubusercontent.com/vicrodh/chilpa-plugins/1115b5d46f658b9e54e158c1cdedb27ec7272a29/validation/dsp-0.2.0-wasm.json"
+            "report": "https://raw.githubusercontent.com/vicrodh/chilpa-plugins/1751e25d61aa705c056717cf3d0e81751c585d08/validation/dsp-0.2.0-wasm.json"
           }
         }
       }
@@ -131,11 +131,11 @@
       "validation": {
         "project": "Chilpa",
         "status": "partial",
-        "report": "https://raw.githubusercontent.com/vicrodh/chilpa-plugins/1115b5d46f658b9e54e158c1cdedb27ec7272a29/validation/nest-0.5.7-linux-x86_64.json",
+        "report": "https://raw.githubusercontent.com/vicrodh/chilpa-plugins/1751e25d61aa705c056717cf3d0e81751c585d08/validation/nest-0.5.7-linux-x86_64.json",
         "platforms": {
           "linux-x86_64": {
             "status": "partial",
-            "report": "https://raw.githubusercontent.com/vicrodh/chilpa-plugins/1115b5d46f658b9e54e158c1cdedb27ec7272a29/validation/nest-0.5.7-linux-x86_64.json"
+            "report": "https://raw.githubusercontent.com/vicrodh/chilpa-plugins/1751e25d61aa705c056717cf3d0e81751c585d08/validation/nest-0.5.7-linux-x86_64.json"
           }
         }
       },
