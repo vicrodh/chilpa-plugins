@@ -59,3 +59,7 @@ describes the package map and platform restrictions.
 Nest is experimental. Its trusted QML and native helper run inside Chilpa with
 application privileges. Raspberry Pi builds and physical touchscreen validation
 remain pending. Feedback belongs in [Nest issues](https://github.com/vicrodh/chilpa-pg-nest/issues).
+
+Nest 0.5.8 opens the complete presentation from the sidebar and improves the light
+shelf index contrast. Native and Flatpak use the same Linux package. If an older
+0.5.7 session already stopped reopening, restart Chilpa once after updating.
