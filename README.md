@@ -43,6 +43,12 @@ Carmine Paolino's Spotifast, and the SDK links it as a
 [native source example](https://github.com/vicrodh/chilpa-plugins-sdk/blob/main/wiki/Native-Plugins.md#native-source-example).
 The third-party catalog includes validation evidence for each platform.
 
+| Nest | [chilpa-pg-nest](https://github.com/vicrodh/chilpa-pg-nest) | **Early-stage experimental.** CD shelves and optional player deck. Requires Chilpa 0.1.3. Ideas and feedback are welcome. | Linux x86_64 process |
+
+Nest is experimental. Its trusted QML and native helper run inside Chilpa with
+application privileges. Raspberry Pi builds and physical touchscreen validation
+remain pending. Feedback belongs in [Nest issues](https://github.com/vicrodh/chilpa-pg-nest/issues).
+
 Catalog updates require a published release ZIP, a checked manifest and
 SHA-256, and a confirmed API version compatible with Chilpa. The
 `protocol-4` SDK tag is a source revision, not a catalog API version.
