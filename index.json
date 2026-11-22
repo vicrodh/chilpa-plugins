@@ -58,11 +58,11 @@
       "validation": {
         "project": "Chilpa",
         "status": "passed",
-        "report": "https://raw.githubusercontent.com/vicrodh/chilpa-plugins/2157d0f285f450c99c38a2ee0f0a259f4cc12bd1/validation/playlist-import-0.1.1-macos-aarch64.json",
+        "report": "https://raw.githubusercontent.com/vicrodh/chilpa-plugins/033349e97a6bbd5050b0ac03e50b518dc70389fa/validation/playlist-import-0.1.1-macos-aarch64.json",
         "platforms": {
           "macos-aarch64": {
             "status": "passed",
-            "report": "https://raw.githubusercontent.com/vicrodh/chilpa-plugins/2157d0f285f450c99c38a2ee0f0a259f4cc12bd1/validation/playlist-import-0.1.1-macos-aarch64.json"
+            "report": "https://raw.githubusercontent.com/vicrodh/chilpa-plugins/033349e97a6bbd5050b0ac03e50b518dc70389fa/validation/playlist-import-0.1.1-macos-aarch64.json"
           }
         }
       }
