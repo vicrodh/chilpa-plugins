@@ -1,0 +1,141 @@
+{
+  "version": 1,
+  "plugin_id": "app.chilpa.nest",
+  "plugin_version": "0.5.8",
+  "author": "vicrodh",
+  "classification": "official",
+  "validation": {
+    "project": "Chilpa",
+    "status": "passed",
+    "date": "2026-11-22",
+    "scope": [
+      "CI unit tests and production packaging",
+      "Exact CI ZIP in native and Flatpak backends",
+      "Sidebar and View menu open the full presentation",
+      "Reopening, hot replacement and three disable/re-enable cycles",
+      "Upgrade from the exact 0.5.7 ZIP",
+      "Light shelf index visual inspection"
+    ],
+    "pending": [
+      "Chilpa 0.1.3 release",
+      "Draft release publication and public URL verification"
+    ],
+    "hosts": [
+      {
+        "version": "0.1.3 pre-release",
+        "backend": "native",
+        "source_commit": "779a1256955f4f8785e83179b4c40e5734b45c66",
+        "binary_sha256": "3bd3e1a7424baca0a5db8384f3f8d3fdaf2451ebc379144cf9b2af094f9191dd"
+      },
+      {
+        "version": "0.1.3 pre-release",
+        "backend": "Flatpak",
+        "source_commit": "779a1256955f4f8785e83179b4c40e5734b45c66",
+        "binary_sha256": "3bd3e1a7424baca0a5db8384f3f8d3fdaf2451ebc379144cf9b2af094f9191dd"
+      }
+    ]
+  },
+  "source": {
+    "repository": "https://github.com/vicrodh/chilpa-pg-nest",
+    "commit": "cf1bb8aed770f5932f797e7e685ae48d2aa041c0",
+    "pull_request": "https://github.com/vicrodh/chilpa-pg-nest/pull/2"
+  },
+  "package": {
+    "name": "chilpa-nest-0.5.8-linux-x86_64.zip",
+    "url": "https://github.com/vicrodh/chilpa-pg-nest/releases/download/v0.5.8/chilpa-nest-0.5.8-linux-x86_64.zip",
+    "sha256": "8e93472922fa6fa95c3afa07afd5901883715b16ee244c369fde434661cdfb5c",
+    "platform": "linux-x86_64",
+    "compressed_bytes": 204476,
+    "expanded_bytes": 599266,
+    "publication": "draft_release"
+  },
+  "contract": {
+    "api_version": 1,
+    "runtime": "process",
+    "required_chilpa": "0.1.3"
+  },
+  "permissions": [
+    {
+      "type": "register_panel"
+    },
+    {
+      "type": "trusted_ui",
+      "entry": "qml/Nest.qml"
+    }
+  ],
+  "ci": {
+    "status": "passed",
+    "run": "https://github.com/vicrodh/chilpa-pg-nest/actions/runs/45079394002",
+    "build_commit": "4c1d5ee814543a9f30ec772480fe6533e8aa43e1",
+    "source_tree": "e1963087ee57ed6b67424aab175cfd4d1eac82a5"
+  },
+  "exact_package_host_integration": "passed",
+  "live_account_playback": "not tested",
+  "physical_audio": "not tested",
+  "experimental": true,
+  "feedback": "Ideas and feedback are welcome: https://github.com/vicrodh/chilpa-pg-nest/issues",
+  "host_checks": [
+    {
+      "backend": "native",
+      "scope": "full presentation",
+      "passed": true,
+      "exit_code": 0,
+      "seconds": 83.53,
+      "package_sha256": "8e93472922fa6fa95c3afa07afd5901883715b16ee244c369fde434661cdfb5c",
+      "host_binary_sha256": "3bd3e1a7424baca0a5db8384f3f8d3fdaf2451ebc379144cf9b2af094f9191dd",
+      "fixture": "6 synthetic silent FLAC albums",
+      "renderer": "offscreen/software"
+    },
+    {
+      "backend": "Flatpak",
+      "scope": "focused lifecycle",
+      "passed": true,
+      "exit_code": 0,
+      "seconds": 8.79,
+      "package_sha256": "8e93472922fa6fa95c3afa07afd5901883715b16ee244c369fde434661cdfb5c",
+      "host_binary_sha256": "3bd3e1a7424baca0a5db8384f3f8d3fdaf2451ebc379144cf9b2af094f9191dd",
+      "fixture": "0 synthetic silent FLAC albums",
+      "renderer": "offscreen/software"
+    },
+    {
+      "backend": "Flatpak",
+      "scope": "full presentation",
+      "passed": true,
+      "exit_code": 0,
+      "seconds": 86.28,
+      "package_sha256": "8e93472922fa6fa95c3afa07afd5901883715b16ee244c369fde434661cdfb5c",
+      "host_binary_sha256": "3bd3e1a7424baca0a5db8384f3f8d3fdaf2451ebc379144cf9b2af094f9191dd",
+      "fixture": "6 synthetic silent FLAC albums",
+      "renderer": "offscreen/software"
+    },
+    {
+      "backend": "native",
+      "scope": "0.5.7 upgrade lifecycle",
+      "passed": true,
+      "exit_code": 0,
+      "seconds": 5.03,
+      "package_sha256": "8e93472922fa6fa95c3afa07afd5901883715b16ee244c369fde434661cdfb5c",
+      "host_binary_sha256": "3bd3e1a7424baca0a5db8384f3f8d3fdaf2451ebc379144cf9b2af094f9191dd",
+      "fixture": "0 synthetic silent FLAC albums",
+      "renderer": "offscreen/software"
+    }
+  ],
+  "flatpak_test_environment": {
+    "application": "app.chilpa.Chilpa",
+    "runtime": "org.kde.Platform/x86_64/6.11",
+    "host": "The same frozen pre-release host binary ran inside the installed Flatpak runtime; the installed application binary was not updated.",
+    "isolation": "XDG profile paths set by env inside the sandbox; separate instance and silent fixture playback.",
+    "warnings": [
+      "Settings/inhibit portal access denied for the isolated harness; playback and assertions passed.",
+      "A HostIndex incubation warning during teardown did not prevent reopening or completion."
+    ]
+  },
+  "upgrade_note": "Restart Chilpa once if an earlier 0.5.7 session already left the shared mount inactive; an inactive mount cannot instantiate the new guard.",
+  "performance": {
+    "package_sha256": "4d12436de59fd7990b50cb13bcf8598339b331d136af9f76e0ee36611cfeba64",
+    "build": "Local build of the same runtime sources, not the CI archive",
+    "before_version": "0.5.7",
+    "after_version": "0.5.8",
+    "result": "Both performance checks passed; idle/hidden/closed visual frames stayed zero. Open-view RSS fell about 4\u20135 MiB; CPU differences were small single-run measurements."
+  }
+}
