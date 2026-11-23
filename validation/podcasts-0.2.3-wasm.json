@@ -1,0 +1,92 @@
+{
+  "version": 1,
+  "plugin_id": "app.chilpa.podcasts",
+  "plugin_version": "0.2.3",
+  "author": "vicrodh",
+  "classification": "official",
+  "validation": {
+    "project": "Chilpa",
+    "status": "passed",
+    "date": "2026-11-21",
+    "scope": [
+      "recorded-response CI tests",
+      "exact published WASM ZIP installation and permission approval",
+      "disable and re-enable in isolated native and Flatpak profiles"
+    ],
+    "untested": [
+      "live directory queries",
+      "episode playback",
+      "physical device synchronisation"
+    ],
+    "hosts": [
+      {
+        "version": "0.1.2",
+        "backend": "Flatpak",
+        "revision": "529055cbc93d8e9d88e0b4f5080f256c378e8fc9262dbdaa05c8e1bb2b32df6d"
+      },
+      {
+        "version": "0.1.3 pre-release",
+        "backend": "native",
+        "revision": "d26d673f7f8c448a96cf1c9823cd95c4a311d4cf"
+      }
+    ]
+  },
+  "source": {
+    "repository": "https://github.com/vicrodh/chilpa-pg-podcasts",
+    "commit": "db569c88e72a8c7314f85163d7307d784fae1e03"
+  },
+  "package": {
+    "name": "chilpa-podcasts-0.2.3.zip",
+    "url": "https://github.com/vicrodh/chilpa-pg-podcasts/releases/download/v0.2.3/chilpa-podcasts-0.2.3.zip",
+    "sha256": "5b962ce567faeb7e82b4b2b8b539001f48541fb7f8b116a0cfe5d3fac53d37e7",
+    "platform": "wasm",
+    "compressed_bytes": 94242,
+    "expanded_bytes": 267393,
+    "download_verified": true
+  },
+  "contract": {
+    "api_version": 1,
+    "runtime": "wasm"
+  },
+  "permissions": [
+    {
+      "type": "network",
+      "domains": [
+        "api.chilpa.app"
+      ]
+    },
+    {
+      "type": "register_source"
+    },
+    {
+      "type": "register_panel"
+    },
+    {
+      "type": "storage"
+    }
+  ],
+  "ci": {
+    "status": "passed",
+    "run": "https://github.com/vicrodh/chilpa-pg-podcasts/actions/runs/44983748108"
+  },
+  "host_checks": [
+    {
+      "backend": "native",
+      "id": "app.chilpa.podcasts",
+      "version": "0.2.3",
+      "sha256": "5b962ce567faeb7e82b4b2b8b539001f48541fb7f8b116a0cfe5d3fac53d37e7",
+      "passed": true,
+      "isolated_install_verified": true,
+      "exit_code": 0
+    },
+    {
+      "backend": "flatpak",
+      "id": "app.chilpa.podcasts",
+      "version": "0.2.3",
+      "sha256": "5b962ce567faeb7e82b4b2b8b539001f48541fb7f8b116a0cfe5d3fac53d37e7",
+      "passed": true,
+      "isolated_install_verified": true,
+      "exit_code": 0
+    }
+  ]
+}

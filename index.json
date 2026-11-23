@@ -19,16 +19,21 @@
     {
       "id": "app.chilpa.podcasts",
       "name": "Podcasts",
-      "version": "0.2.2",
+      "version": "0.2.3",
       "description": "Shows from PodcastIndex, an open index of podcasts: by language and category, with every episode. It needs no account.",
       "author": "vicrodh",
       "category": "information",
       "repository": "https://github.com/vicrodh/chilpa-pg-podcasts",
-      "package": "https://github.com/vicrodh/chilpa-pg-podcasts/releases/download/v0.2.2/chilpa-pg-podcasts-0.2.2-wasm.zip",
-      "sha256": "56b68241a87903437559ae3a833ebeb2b8fb56ec03b0d924f98f1322d0ec90f2",
+      "package": "https://github.com/vicrodh/chilpa-pg-podcasts/releases/download/v0.2.3/chilpa-podcasts-0.2.3.zip",
+      "sha256": "5b962ce567faeb7e82b4b2b8b539001f48541fb7f8b116a0cfe5d3fac53d37e7",
       "api": {
         "min": 1,
         "max": 1
+      },
+      "validation": {
+        "project": "Chilpa",
+        "status": "passed",
+        "report": "https://raw.githubusercontent.com/vicrodh/chilpa-plugins/5b8d972e8624bb7edd3eeed8367b9ceda763e2cc/validation/podcasts-0.2.3-wasm.json"
       }
     },
     {
