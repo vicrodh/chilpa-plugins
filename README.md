@@ -25,6 +25,7 @@ approval before enabling a plugin.
 
 | Plugin | Source | What it does | Package |
 | --- | --- | --- | --- |
+| Nest | [chilpa-pg-nest](https://github.com/vicrodh/chilpa-pg-nest) | **Early-stage experimental.** CD shelves and optional player deck. Requires Chilpa 0.1.3. Ideas and feedback are welcome. | Linux x86_64 process |
 | Radio | [chilpa-pg-radio](https://github.com/vicrodh/chilpa-pg-radio) | Stations from Radio Browser. No account. | WASM |
 | Podcasts | [chilpa-pg-podcasts](https://github.com/vicrodh/chilpa-pg-podcasts) | Shows and episodes from PodcastIndex. No account. | WASM |
 | Playlist Importer | [chilpa-pg-playlist-import](https://github.com/vicrodh/chilpa-pg-playlist-import) | Import playlist files and public playlists, then match tracks to local and connected sources. | Linux x86_64 / macOS Apple Silicon process |
@@ -44,3 +45,11 @@ entries are omitted from the visible catalog. The macOS native plugins
 require the host build with Seatbelt process support. WASM packages remain
 portable. The [SDK guide](https://github.com/vicrodh/chilpa-plugins-sdk/blob/main/wiki/Native-Plugins.md#platform-packages)
 describes the package map and platform restrictions.
+
+Nest is experimental. Its trusted QML and native helper run inside Chilpa with
+application privileges. Raspberry Pi builds and physical touchscreen validation
+remain pending. Feedback belongs in [Nest issues](https://github.com/vicrodh/chilpa-pg-nest/issues).
+
+Nest 0.5.8 opens the complete presentation from the sidebar and improves the light
+shelf index contrast. Native and Flatpak use the same Linux package. If an older
+0.5.7 session already stopped reopening, restart Chilpa once after updating.
